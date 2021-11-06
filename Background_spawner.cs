@@ -20,6 +20,7 @@ public class Background_spawner : MonoBehaviour
     void Start()
     {
         tr = transform;
+        tr.position = new Vector3(transform.position.x, Random.Range(-4.5f, 4.5f), transform.position.z);
         time = 0.0f;
         updateSpawnTime();
     }
